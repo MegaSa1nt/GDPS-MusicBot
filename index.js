@@ -72,7 +72,7 @@ client.on("interactionCreate", async (interaction) => {
 			}
 		}
 		else if(interaction.isStringSelectMenu()) {
-			const command = interaction.client.commands.get("пл");
+			const command = interaction.client.commands.get("play");
 			try {
 				await command.execute(interaction, gcs);
 			} catch (error) {
