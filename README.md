@@ -1,9 +1,11 @@
 # GDPS-MusicBot
-Music bot for your GDPSs!
+Music bot for your GDPSs! (It plays music from your GDPS)
 
 **Before using this bot**:
 - You must use [**my dashboard**](https://github.com/MegaSa1nt/GMDprivateServer) :trollface:
 - You should know how to create and host Discord bot
+- You should install node.js
+- You should run `npm i` command in bot's folder
 
 **How to configure**:
 - There is **config.json** file, you should open it
@@ -27,5 +29,16 @@ Music bot for your GDPSs!
   - "errorSomethingWentWrong" — message text when unexpected error happens
   - "errorCommandNotFound" — message text when command was not found
   - "botVersion" — bot version
+
+Used libraries:
+```
+"@discord-player/extractor": "^4.3.1",
+"@discordjs/opus": "^0.9.0",
+"axios": "^1.4.0",
+"discord-player": "^6.6.0",
+"discord.js": "^14.11.0",
+"dotenv": "^16.3.1",
+"ffmpeg-static": "^5.1.0"
+```
 
 Thanks for using it!
