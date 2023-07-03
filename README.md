@@ -27,3 +27,5 @@ Music bot for your GDPSs!
   - "errorSomethingWentWrong" — message text when unexpected error happens
   - "errorCommandNotFound" — message text when command was not found
   - "botVersion" — bot version
+
+Thanks for using it!
