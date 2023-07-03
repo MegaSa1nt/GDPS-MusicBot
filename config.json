@@ -1,0 +1,27 @@
+{
+	"prefix": "!",
+	"clientId": "Your bot's clientId",
+	
+	"songAPI": "/api folder in dashboard",
+	"dashboard": "Your main dashboard folder",
+	"gdps": "Your GDPS name",
+	
+	"mainEmbedColor": "BBFFBB",
+	"errorEmbedColor": "FFBBBB",
+	"warnEmbedColor": "FFDDBB",
+	"mainEmbedURL": "Embed title URL",
+	"authorEmbedIconURL": "Author icon",
+	"authorEmbedURL" : "Author URL",
+	"mainEmbedFooterIcon": "Footer icon",
+	
+	"mainThumbnailURL": "Main thumbnail URL",
+	"musicThumbnailURL": "Music thumbnail URL",
+	"nomusicThumbnailURL": "No music thumbnail URL",
+	"listThumbnailURL": "List thumbnail URL",
+	"searchThumbnailURL": "Search thumbnail URL",
+	
+	"errorSomethingWentWrong": "Hi! Something went wrong...",
+	"errorCommandNotFound": "Hello! This command doesn't exist..?",
+	
+	"botVersion": "1.0"
+}
