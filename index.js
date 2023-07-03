@@ -35,19 +35,19 @@ for (const folder of commandFolders) {
 			client.commands.set(command.data.name, command);
 			commands.push(command.data.toJSON());
 		} else {
-			console.log(`${filePath} не существует.`);
+			console.log(`${filePath} doesn't exist.`);
 		}
 	}
 }
 const rest = new Discord.REST().setToken(token);
 (async () => {
 	try {
-		console.log(`Обновление ${commands.length} (/) команд.`);
+		console.log(`Updating ${commands.length} (/) commands.`);
 		const data = await rest.put(
 			Discord.Routes.applicationCommands(clientId),
 			{ body: commands },
 		);
-		console.log(`Успешно обновлено ${data.length} (/) команд.`);
+		console.log(`Successfully updated ${data.length} (/) commands.`);
 	} catch (error) {
 		console.error(error);
 	}
@@ -94,11 +94,11 @@ player.events.on('playerStart', (queue, track) => {
 	gdps, 
 	authorEmbedIconURL,
 	authorEmbedURL, 
-	'Заиграла песня [**'+track.author+'** — **'+track.title+'**]('+dashboard+'stats/songList.php?search='+track.description+')!', 
+	'[**'+track.author+'** — **'+track.title+'**]('+dashboard+'stats/songList.php?search='+track.description+') started playing!', 
 	musicThumbnailURL, 
 	false, 
 	false, 
-	gdps+', приятного прослушивания!', 
+	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
 });
@@ -109,41 +109,41 @@ player.events.on('playerSkip', (queue, track) => {
 	gdps, 
 	authorEmbedIconURL,
 	authorEmbedURL, 
-	'Пропускаю [**'+track.author+'** — **'+track.title+'**]('+dashboard+'stats/songList.php?search='+track.description+')...', 
+	'Skipping [**'+track.author+'** — **'+track.title+'**]('+dashboard+'stats/songList.php?search='+track.description+')...', 
 	nomusicThumbnailURL, 
 	false, 
 	false, 
-	gdps+', приятного прослушивания!', 
+	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
 });
 player.events.on('disconnect', (queue) => {
 	messageEmbed = embed(mainEmbedColor, 
-	'Все песни сыграны!', 
+	'Queue is empty!', 
 	dashboard, 
 	gdps, 
 	authorEmbedIconURL,
 	authorEmbedURL, 
-	'Я покинул голосовой канал, так как очередь закончилась!', 
+	'I left voice channel, because queue is empty', 
 	nomusicThumbnailURL, 
 	false, 
 	false, 
-	gdps+', приятного прослушивания!', 
+	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
 });
 player.events.on('emptyChannel', (queue) => {
 	messageEmbed = embed(errorEmbedColor, 
-	'Пустой канал!', 
+	'Empty channel!', 
 	dashboard, 
 	gdps, 
 	authorEmbedIconURL,
 	authorEmbedURL, 
-	'Я покинул голосовой канал, так как никого в нём нет.', 
+	'I left voice channel, because it\'s empty.', 
 	nomusicThumbnailURL, 
 	false, 
 	false, 
-	gdps+', приятного прослушивания!', 
+	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
 });
