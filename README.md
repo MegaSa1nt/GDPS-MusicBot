@@ -6,6 +6,7 @@ Music bot for your GDPSs! (It plays music from your GDPS)
 - You should know how to create and host Discord bot
 - You should install node.js (v18.16.0 works fine)
 - You should run `npm i` command in bot's folder
+- This bot is supposed to run on only one Discord server
 
 **How to configure**:
 - There is **config.json** file, you should open it
