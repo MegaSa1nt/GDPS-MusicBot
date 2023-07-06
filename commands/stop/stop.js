@@ -27,5 +27,6 @@ module.exports = {
 		queue.delete();
 		messageEmbed = gcs.embedShort(gcs.errorEmbedColor, 'Bot stopped playing songs!', gcs.authorEmbedIconURL, gcs.authorEmbedURL);
 		interaction.followUp({ embeds: [messageEmbed] });
+		interaction.client.user.setPresence({ activities: [{ name: gcs.gdps, type: 0 }], status: 'idle' });
 	},
 };

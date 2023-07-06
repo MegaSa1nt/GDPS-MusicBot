@@ -83,6 +83,9 @@ client.on("interactionCreate", async (interaction) => {
 		}
 	}
 });
+client.once('ready', async function() {
+	client.user.setPresence({ activities: [{ name: gdps, type: 0 }], status: 'idle' });
+});
 const player = new Player(client);
 
 player.extractors.register(AttachmentExtractor, {});
@@ -101,6 +104,7 @@ player.events.on('playerStart', (queue, track) => {
 	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
+	client.user.setPresence({ activities: [{ name: track.author+' — '+track.title, type: 2 }], status: 'online' });
 });
 player.events.on('playerSkip', (queue, track) => {
 	messageEmbed = embed(warnEmbedColor, 
@@ -131,6 +135,7 @@ player.events.on('disconnect', (queue) => {
 	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
+	client.user.setPresence({ activities: [{ name: gdps, type: 0 }], status: 'idle' });
 });
 player.events.on('emptyChannel', (queue) => {
 	messageEmbed = embed(errorEmbedColor, 
@@ -146,6 +151,7 @@ player.events.on('emptyChannel', (queue) => {
 	gdps+', thanks for using me!', 
 	mainEmbedFooterIcon);
     queue.metadata.channel.send({ embeds: [messageEmbed] });
+	client.user.setPresence({ activities: [{ name: gdps, type: 0 }], status: 'idle' });
 });
 
 function getSongs(search, full = false) {
