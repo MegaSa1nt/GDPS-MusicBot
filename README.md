@@ -2,7 +2,8 @@
 Music bot for your GDPSs for Revolt! (It plays music from your GDPS)
 
 **Before using this bot**:
-- This is VERY alpha version. For now it only has three commands: `/play`, `/skip` (*doesn't work*) and `/stop`
+- This is **VERY** alpha version. For now it only has three commands: `/play`, `/skip` (*doesn't work*) and `/stop`
+- This bot doesn't use Embeds now, so Embed configs are unused
 - You must use [**my dashboard**](https://github.com/MegaSa1nt/GMDprivateServer) :trollface:
 - You should know how to create and host Revolt bot
 - You should install node.js (v18.16.0 works fine)
@@ -13,7 +14,7 @@ Music bot for your GDPSs for Revolt! (It plays music from your GDPS)
 - There is **config.json** file, you should open it
 - Description for every config variable:
   - "prefix" — prefix of your bot, unused
-  - "clientId" — [Client ID of your bot](https://gcs.icu/WTFIcons/guides/clientId.png)
+  - "voice" — Voice channel you want bot to play music in
   - "songAPI" — [your API folder in dashboard](https://gcs.icu/WTFIcons/guides/songAPI.png)
   - "dashboard" — [your main dashboard folder](https://gcs.icu/WTFIcons/guides/dashboard.png)
   - "mainEmbedColor" — [color of almost all bot embeds](https://gcs.icu/WTFIcons/guides/mainEmbedColor.png)
