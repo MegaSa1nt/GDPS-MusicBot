@@ -1,27 +1,27 @@
 {
-	"prefix": "!",
-	"clientId": "Your bot's clientId",
+	"prefix": "/",
+	"clientId": "",
 	
-	"songAPI": "/api folder in dashboard",
-	"dashboard": "Your main dashboard folder",
-	"gdps": "Your GDPS name",
+	"songAPI": "",
+	"dashboard": "",
+	"gdps": "GDPS",
 	
 	"mainEmbedColor": "BBFFBB",
 	"errorEmbedColor": "FFBBBB",
 	"warnEmbedColor": "FFDDBB",
-	"mainEmbedURL": "Embed title URL",
-	"authorEmbedIconURL": "Author icon",
-	"authorEmbedURL" : "Author URL",
-	"mainEmbedFooterIcon": "Footer icon",
+	"mainEmbedURL": "",
+	"authorEmbedIconURL": "",
+	"authorEmbedURL" : "",
+	"mainEmbedFooterIcon": "",
 	
-	"mainThumbnailURL": "Main thumbnail URL",
-	"musicThumbnailURL": "Music thumbnail URL",
-	"nomusicThumbnailURL": "No music thumbnail URL",
-	"listThumbnailURL": "List thumbnail URL",
-	"searchThumbnailURL": "Search thumbnail URL",
+	"mainThumbnailURL": "",
+	"musicThumbnailURL": "",
+	"nomusicThumbnailURL": "",
+	"listThumbnailURL": "",
+	"searchThumbnailURL": "",
 	
-	"errorSomethingWentWrong": "Hi! Something went wrong...",
-	"errorCommandNotFound": "Hello! This command doesn't exist..?",
+	"errorSomethingWentWrong": "Hello! Something went wrong...",
+	"errorCommandNotFound": "Hi! This command doesn't exist.",
 	
-	"botVersion": "1.1"
+	"botVersion": "0.1"
 }

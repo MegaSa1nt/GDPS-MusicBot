@@ -1,12 +1,13 @@
 # GDPS-MusicBot
-Music bot for your GDPSs! (It plays music from your GDPS)
+Music bot for your GDPSs for Revolt! (It plays music from your GDPS)
 
 **Before using this bot**:
+- This is VERY alpha version. For now it only has three commands: `/play`, `/skip` (*doesn't work*) and `/stop`
 - You must use [**my dashboard**](https://github.com/MegaSa1nt/GMDprivateServer) :trollface:
-- You should know how to create and host Discord bot
+- You should know how to create and host Revolt bot
 - You should install node.js (v18.16.0 works fine)
 - You should run `npm i` command in bot's folder
-- This bot is supposed to run on only one Discord server
+- This bot is supposed to run on only one Revolt server
 
 **How to configure**:
 - There is **config.json** file, you should open it
@@ -34,12 +35,13 @@ Music bot for your GDPSs! (It plays music from your GDPS)
 Used libraries:
 ```
 "@discord-player/extractor": "^4.3.1",
-"@discordjs/opus": "^0.9.0",
 "axios": "^1.4.0",
 "discord-player": "^6.6.0",
-"discord.js": "^14.11.0",
 "dotenv": "^16.3.1",
-"ffmpeg-static": "^5.1.0"
+"ffmpeg-static": "^5.1.0",
+"revoice.js": "^0.1.7537",
+"revolt.js": "6.0.20-patch.2",
+"ytdl-core": "^4.11.4"
 ```
 
 Thanks for using it!
