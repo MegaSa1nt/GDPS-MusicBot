@@ -2,6 +2,7 @@
 Music bot for your GDPSs for Revolt! (It plays music from your GDPS)
 
 **Before using this bot**:
+- It can crash with error -4095. I can't handle it, no matter how hard i try.
 - You must use [**my dashboard**](https://github.com/MegaSa1nt/GMDprivateServer) :trollface:
 - You should know how to create and host Revolt bot
 - You should install node.js (v18.16.0 works fine)
