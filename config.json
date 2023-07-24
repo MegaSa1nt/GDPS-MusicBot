@@ -1,6 +1,6 @@
 {
 	"prefix": "/",
-	"voice": "",
+	"voice": "REVOLT_VOICE_CHANNEL_ID",
 	
 	"songAPI": "",
 	"dashboard": "",
@@ -9,19 +9,7 @@
 	"mainEmbedColor": "BBFFBB",
 	"errorEmbedColor": "FFBBBB",
 	"warnEmbedColor": "FFDDBB",
-	"mainEmbedURL": "",
 	"authorEmbedIconURL": "",
-	"authorEmbedURL" : "",
-	"mainEmbedFooterIcon": "",
 	
-	"mainThumbnailURL": "",
-	"musicThumbnailURL": "",
-	"nomusicThumbnailURL": "",
-	"listThumbnailURL": "",
-	"searchThumbnailURL": "",
-	
-	"errorSomethingWentWrong": "Hello! Something went wrong...",
-	"errorCommandNotFound": "Hi! This command doesn't exist.",
-	
-	"botVersion": "0.1"
+	"botVersion": "1.0"
 }
