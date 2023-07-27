@@ -19,7 +19,10 @@ Music bot for your GDPSs for Revolt! (It plays music from your GDPS)
   - "errorEmbedColor" — [embed errors color](https://gcs.icu/WTFIcons/guides/errorEmbedColor.png)
   - "warnEmbedColor" — [embed warn color](https://gcs.icu/WTFIcons/guides/warnEmbedColor.png)
   - "authorEmbedIconURL" — [author's icon URL](https://gcs.icu/WTFIcons/guides/authorEmbedIconURL.png)
-  - "botVersion" — bot version
+  - "botVersion" — bot version (1.1)
+
+**Commands**:
+- Run `/help`
 
 Used libraries:
 ```
