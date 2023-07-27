@@ -13,15 +13,17 @@ var isPaused = false;
 var mediaQueue = [];
 var events = require('events');
 var eventEmitter = new events.EventEmitter();
-let client = new Revolt.Client();
+let revolt = new Revolt.Client();
+const wait = ms => new Promise(r => setTimeout(r, ms));
+
 const connection = revoice.join(config.voice).then(conn => {
-	client.loginBot(token);
+	revolt.loginBot(token);
 	conn.on('join', () => {
 		conn.play(media);
 	})
 });
-
-client.on("messageCreate", async (message) => {
+process.on('uncaughtException', function(err) {console.log('[REVOLT] ' + err);});
+revolt.on("messageCreate", async (message) => {
 	if(!message.content.startsWith(config.prefix)) return;
 	command = message.content.split(" ");
 	switch(command[0]) {
