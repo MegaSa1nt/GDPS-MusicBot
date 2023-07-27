@@ -209,10 +209,3 @@ function iconem(title, text, img, color = config.mainEmbedColor) {
 		embeds: [e]
 	}
 }
-
-function bufferToStream(buffer) { 
-	var stream = new Readable();
-	stream.push(buffer);
-	stream.push(null);
-	return stream;
-}
