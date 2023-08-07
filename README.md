@@ -21,7 +21,7 @@ Music bot for your GDPSs! (It plays music from your GDPS)
   - "mainEmbedURL" — [URL of embed titles](https://gcs.icu/WTFIcons/guides/mainEmbedURL.png)
   - "authorEmbedIconURL" — [author's icon URL](https://gcs.icu/WTFIcons/guides/authorEmbedIconURL.png)
   - "authorEmbedURL" — [author's URL](https://gcs.icu/WTFIcons/guides/authorEmbedURL.png)
-  - "mainEmbedFooterIcon" — [embed footer icon](https://gcs.icu/WTFIcons/guides/mainEmbedFooterIcon.png)
+  - "mainEmbedFooterIcon" — [embed footer icon](https://gcs.icu/WTFIcons/guides/mainEmbedFooterURL.png)
   - "mainThumbnailURL" — thumbnail of almost all bot embeds
   - "musicThumbnailURL" — thumbnail of "playing song" embed message
   - "nomusicThumbnailURL" — thumbnail of "stopped playing" embed message
