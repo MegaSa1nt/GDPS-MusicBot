@@ -18,7 +18,7 @@ module.exports = {
 		'||**<necessary>**, **[optional]**||';
 		field = { name: 'My commands', value: arr };
 		messageEmbed = gcs.embed(gcs.mainEmbedColor, 
-		'Помощь!', 
+		'Help!', 
 		gcs.mainEmbedURL, 
 		gcs.gdps, 
 		gcs.authorEmbedIconURL,
