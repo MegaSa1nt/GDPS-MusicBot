@@ -168,14 +168,14 @@ function getSongs(search, full = false) {
 function embed(color, title, url, aun, aui, auu, desc = false, thumb = '', fields = false, image = false, ft, fu) {
 	const messageEmbed = new Discord.EmbedBuilder()
 	.setColor(color)
-	.setTitle(title)
-	.setURL(url)
-	.setAuthor({ name: aun, iconURL: aui, url: auu })
+	.setTitle(title+'')
+	.setURL(url+'')
+	.setAuthor({ name: aun+'', iconURL: aui+'', url: auu+'' })
 	.setTimestamp()
-	.setFooter({ text: ft, iconURL: fu });
+	.setFooter({ text: ft+'', iconURL: fu+'' });
 	if(fields) messageEmbed.addFields(fields);
 	if(image) messageEmbed.setImage(image);
-	if(desc) messageEmbed.setDescription(desc);
+	if(desc) messageEmbed.setDescription(desc+'');
 	if(thumb != '') messageEmbed.setThumbnail(thumb);
 	return messageEmbed;
 }
@@ -183,7 +183,7 @@ function embed(color, title, url, aun, aui, auu, desc = false, thumb = '', field
 function embedShort(color, aun, aui, auu) {
 	const messageEmbed = new Discord.EmbedBuilder()
 	.setColor(color)
-	.setAuthor({ name: aun, iconURL: aui, url: auu });
+	.setAuthor({ name: aun+'', iconURL: aui+'', url: auu+'' });
 	return messageEmbed;
 }
 
